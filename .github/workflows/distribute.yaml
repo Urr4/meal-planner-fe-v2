@@ -25,4 +25,4 @@ jobs:
 
       - name: Build and push the Docker image
         run: |
-          docker build --push --platform linux/arm/v7 -t 08021986/meal-planner-fe-v2:${GITHUB_SHA} -t 08021986/meal-planner-fe-v2:latest .
+          docker buildx build --push --platform linux/arm/v7 -t 08021986/meal-planner-fe-v2:${GITHUB_SHA} -t 08021986/meal-planner-fe-v2:latest .
